@@ -1005,20 +1005,13 @@
 
 			if (this.calendars[0].year > maxYear) {
 				this.calendars[0].year = maxYear;
+				this.calendars[0].month = maxMonth;
 			}
 
 			if (this.calendars[0].year < minYear) {
 				this.calendars[0].year = minYear;
-			}
-
-			if (this.calendars[0].month > maxMonth) {
-				this.calendars[0].month = maxMonth;
-			}
-
-			if (this.calendars[0].month < minMonth) {
 				this.calendars[0].month = minMonth;
 			}
-
 
 			randId = 'pika-title-' + Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 2);
 
